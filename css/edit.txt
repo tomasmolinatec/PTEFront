@@ -1,0 +1,35 @@
+.index, .index2{
+    background-color: rgba(36, 34, 34, 0.9); /* Use RGBA for transparent black */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: sticky; /* Sticky position for the nav */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure the navbar is above other items */
+}
+
+.index .content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.index a, .index2 a {
+    margin: 0 15px;
+    font-family: 'Rowdies', sans-serif; /* Applying Rowdies font */
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Regular weight, use 700 for bold if needed */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.index a:hover, .index2 a:hover {
+    color: #f8f8f2; /* Light color for hover */
+    background-color: rgba(35, 67, 77, 0.5); /* Transparent background on hover */
+    text-decoration: none; /* No underline on hover */
+    padding: 0.5rem 1rem; /* Padding for a 'button-like' feel */
+    border-radius: 5px; /* Rounded corners on hover */
+} 

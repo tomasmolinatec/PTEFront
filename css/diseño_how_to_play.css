@@ -1,0 +1,140 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    background-image: url('../css/imagenes/dark_forest.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding-top: 0px; /* Added to prevent content from hiding behind the fixed navbar */
+}
+
+.index
+{
+    background-color: rgba(36, 34, 34, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: sticky; /* Sticky position for the nav */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure the navbar is above other items */
+}
+div.index .content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.index a
+{
+    margin: 0 15px;
+    font-family: 'Rowdies', sans-serif; /* Applying Rowdies font */
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Regular weight, use 700 for bold if needed */
+    transition: color 0.3s, background-color 0.3s;
+}
+.index a:hover
+{
+    color: #f8f8f2; /* Light color for hover */
+    background-color: rgba(35, 67, 77, 0.5); /* Transparent background on hover */
+    text-decoration: none; /* No underline on hover */
+    padding: 0.5rem 1rem; /* Padding for a 'button-like' feel */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+.index a:active
+{
+    text-decoration: underline;
+}
+
+
+.index a[href="./how_to_play"]:not(:hover) {
+    color: #fff;
+    background-color: #ff4500; /* A bright color to indicate active page */
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.title_HowToPlay {
+    font-family: 'Rowdies', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../css/imagenes/letrero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    padding: 20px 0;
+}
+
+.text_instrucciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 100%;
+}
+
+.text_instrucciones .instruction-box {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    background-color: rgba(36, 34, 34, 0.85);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    overflow: hidden; /* Prevents the content from spilling out */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.text_instrucciones .instruction-box img {
+    max-width: 100%; /* Ensure the image is not larger than its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Add space between the image and the text */
+}
+
+/* All heading tags now use Rowdies font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rowdies', sans-serif;
+    color: #ffcc00; /* Or choose the color that suits your design */
+    margin-top: 0;
+}
+
+.text_instrucciones p {
+    line-height: 1.5;
+}
+
+
+
+@media (max-width: 768px) {
+    .text_instrucciones .instruction-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        flex-direction: row; /* Align items horizontally on small screens */
+        flex-wrap: wrap; /* Wrap items to the next line if space runs out */
+    }
+
+    /*.index a, .index2 a {
+        margin: 0 10px;
+    }*/
+    .text_instrucciones .instruction-box img {
+        max-width: 50%; /* Take up half the width on small screens */
+    }
+}
+
+
+
+
+
+
+
+
+

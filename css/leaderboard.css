@@ -1,0 +1,152 @@
+
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rowdies', sans-serif;;
+    color: white;
+    background-image: url('../css/imagenes/leaderB3.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding-top: 0px; /* Added to prevent content from hiding behind the fixed navbar */ 
+}
+
+h1, h2, p{
+    font-family: 'Rowdies', sans-serif;;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+h1{
+    margin: 0;
+}
+
+.container, canvas{
+    padding: 1%;
+    border: 1px solid black;
+}
+
+#creatingChart{
+    margin: 0;
+}
+
+.container, .container h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.chartContainer{
+    border: 0;
+    justify-content: center; 
+    justify-items: flex-start;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    /*align-content: center; */
+}
+
+.chartContainer canvas{
+    flex-grow: 1;
+    max-width: 30%; 
+    max-height: 600px;
+}
+.index
+{
+    background-color: rgba(36, 34, 34, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: sticky; /* Sticky position for the nav */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure the navbar is above other items */
+    
+}
+
+.index .content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.index a
+{
+    margin: 0 15px;
+    font-family: 'Rowdies', sans-serif; /* Applying Rowdies font */
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Regular weight, use 700 for bold if needed */
+    transition: color 0.3s, background-color 0.3s;
+    
+}
+
+.index a:hover
+{
+    color: #f8f8f2; /* Light color for hover */
+    background-color: rgba(35, 67, 77, 0.5); /* Transparent background on hover */
+    text-decoration: none; /* No underline on hover */
+    padding: 0.5rem 1rem; /* Padding for a 'button-like' feel */
+    border-radius: 5px; /* Rounded corners on hover */
+   
+}
+
+.index a[href="./leaderboard"]:not(:hover) {
+    color: #fff;
+    background-color: #ff4500; /* A bright color to indicate active page */
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+.chartContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px; /* Space between the charts */
+    padding: 20px;
+}
+
+.chartContainer canvas {
+    background-color: rgba(0, 0, 0, 0.716); /* Grey and semi-transparent background */
+    border-radius: 10px; /* Rounded corners for the canvas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    width: calc(50% - 20px); /* Adjust width to account for 2 per row */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between chart rows */
+}
+
+/* Ensure that the navbar doesn't cover any of your content */
+.container {
+    background-color: rgba(0, 0, 0, 0.716);
+    margin-top: 80px; /* Provide enough space for the navbar */
+    margin-bottom: 100px;
+    font-size: 3.2em;
+   
+
+}
+
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .chartContainer canvas {
+        max-width: 100%;
+    }
+    .index a {
+        margin: 0 10px; /* Less margin on smaller screens */
+    }
+}

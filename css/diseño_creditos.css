@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Rowdies', sans-serif;;
+    color: white;
+    background-image: url('../css/imagenes/light_forest.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding-top: 0px; /* Added to prevent content from hiding behind the fixed navbar */ 
+    
+}
+h1, h2, p{
+    font-family: 'Rowdies', sans-serif;;
+}
+
+div
+{
+    margin: -8px;
+    padding: 20px;
+}
+
+p
+{
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.index
+{
+    background-color: rgba(36, 34, 34, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: sticky; /* Sticky position for the nav */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure the navbar is above other items */
+}
+div.index .content
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.index a
+{
+    margin: 0 15px;
+    font-family: 'Rowdies', sans-serif; /* Applying Rowdies font */
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Regular weight, use 700 for bold if needed */
+    transition: color 0.3s, background-color 0.3s;
+}
+.index a:hover
+{
+    color: #f8f8f2; /* Light color for hover */
+    background-color: rgba(35, 67, 77, 0.5); /* Transparent background on hover */
+    text-decoration: none; /* No underline on hover */
+    padding: 0.5rem 1rem; /* Padding for a 'button-like' feel */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+.index a:active
+{
+    text-decoration: underline;
+}
+
+.index a[href="./creditos"]:not(:hover) {
+    color: #fff;
+    background-color: #ff4500; /* A bright color to indicate active page */
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+div.title_creditos
+{
+    font-family: "Rowdies", sans-serif; /* This applies the font family */
+    font-weight: 100; /* This will make it bold */
+    font-size: 7rem; /* Adjust size as needed */
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    position: absolute;
+    top: 10%; /* Position the title lower or higher as per your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #fff; /* White color for the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    font-size: 7rem; /* Large font size for the title */
+    z-index: 10;
+}
+
+.nombres_matriculas
+{
+    text-align: center;
+    background-color: rgba(36, 34, 34, 0.85); /* A bit more opaque than before */
+    color: #ffffff;
+    font-size: 1.50rem; /* Larger text */
+    line-height: 1.5;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 60%;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; 
+
+}
+
+
+div.copy
+{
+    background-color: #242222;
+    opacity: 0.9;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
