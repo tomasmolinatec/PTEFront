@@ -5,11 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Prototype</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="html/TemplateData/style.css">
-    <link rel = 'stylesheet' href = "../css/Game.css">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel = 'stylesheet' href = "css/Game.css">
   </head>
   <body>
-
     <div class = "index">
       <A href = "./"> Home </A>
       <A> | </A>
@@ -21,7 +20,6 @@
       <A> | </A>
       <A href = "./creditos"> Credits </A>
   </div>
-
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
@@ -70,12 +68,12 @@
         updateBannerVisibility();
       }
 
-      var buildUrl = "html/Build";
-      var loaderUrl = buildUrl + "/game.loader.js";
+      var buildUrl = "https://3a04a8fa27150ca7e720e36a2e3d9637.r2.cloudflarestorage.com/pte/Build";
+      var loaderUrl = buildUrl + "/FINALBUILD.loader.js";
       var config = {
-        dataUrl: buildUrl + "/game.data",
-        frameworkUrl: buildUrl + "/game.framework.js",
-        codeUrl: buildUrl + "/game.wasm",
+        dataUrl: buildUrl + "/FINALBUILD.data",
+        frameworkUrl: buildUrl + "/FINALBUILD.framework.js",
+        codeUrl: buildUrl + "/FINALBUILD.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Prototype",
