@@ -79,7 +79,13 @@ catch(error)
 try {
   const response = await fetch(
     'https://pte-app-78oio.ondigitalocean.app/api/leaderboard',
-    { method: 'GET' }
+    {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    }
   );
 
   if (response.ok) {
