@@ -73,7 +73,7 @@ p
     text-decoration: underline;
 }
 
-.index a[href="./game"]:not(:hover) {
+.index a[href="./game.html"]:not(:hover) {
     color: #fff;
     background-color: #ff4500; /* A bright color to indicate active page */
     border-radius: 5px;

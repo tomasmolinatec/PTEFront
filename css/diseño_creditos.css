@@ -73,7 +73,7 @@ div.index .content
     text-decoration: underline;
 }
 
-.index a[href="./creditos"]:not(:hover) {
+.index a[href="./creditos.html"]:not(:hover) {
     color: #fff;
     background-color: #ff4500; /* A bright color to indicate active page */
     border-radius: 5px;
