@@ -79,7 +79,7 @@ catch(error)
 try {
   const response = await fetch(
     // protocol to https contidionally
-    '159.89.80.142:4200/api/leaderboard',
+    'https://pte-app-78oio.ondigitalocean.app/api/leaderboard',
     {
       method: 'GET',
       headers: {
@@ -175,7 +175,7 @@ try {
   }
 
   const response1 = await fetch(
-    'http://159.89.80.142:4200/api/mapStats',
+    'https://pte-app-78oio.ondigitalocean.app/api/mapStats',
     {
       method: 'GET',
       headers: {
@@ -216,7 +216,7 @@ try {
   }
 
   const response2 = await fetch(
-    'http://159.89.80.142:4200/api/cardStats',
+    'https://pte-app-78oio.ondigitalocean.app/api/cardStats',
     {
       method: 'GET',
       headers: {
