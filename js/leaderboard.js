@@ -61,7 +61,7 @@ const firstChart = new Chart(ctx, {
 /*
 try
 {
-    const response = await fetch('http://127.0.0.1:3000/api/leaderboard',{method: 'GET'});
+    const response = await fetch('http://127.0.0.1:4200/api/leaderboard',{method: 'GET'});
     let results = await response.json();
 
     console.log(results);
@@ -78,7 +78,8 @@ catch(error)
 
 try {
   const response = await fetch(
-    'https://pte-app-78oio.ondigitalocean.app/api/leaderboard',
+    // protocol to https contidionally
+    '159.89.80.142:4200/api/leaderboard',
     {
       method: 'GET',
       headers: {
@@ -174,8 +175,14 @@ try {
   }
 
   const response1 = await fetch(
-    'https://pte-app-78oio.ondigitalocean.app/api/mapStats',
-    { method: 'GET' }
+    'http://159.89.80.142:4200/api/mapStats',
+    {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    }
   );
 
   if (response1.ok) {
@@ -209,8 +216,14 @@ try {
   }
 
   const response2 = await fetch(
-    'https://pte-app-78oio.ondigitalocean.app/api/cardStats',
-    { method: 'GET' }
+    'http://159.89.80.142:4200/api/cardStats',
+    {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      },
+    }
   );
 
   if (response2.ok) {
